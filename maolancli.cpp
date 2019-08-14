@@ -98,7 +98,7 @@ int main(int argc, char **argv)
   OSSOut out("/dev/dsp", 2);
   Track track("name");
   Clip clip(0,30000,0,"data/session.wav");
-  clip.parrent(&track);
+  clip.parent(&track);
   out.connect(&track);
   // auto a = maolan::loadXml();
   // maolan::IO::loadFromNode(&a);
